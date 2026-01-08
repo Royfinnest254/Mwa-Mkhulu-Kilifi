@@ -22,10 +22,10 @@ export default function AdminDashboard() {
     const fetchData = async () => {
       setLoading(true);
       const [businesses, investors, reports, audits] = await Promise.all([
-        mockDb.get<Business>('investor_platform_businesses_v2'),
-        mockDb.get<Investor>('investor_platform_investors_v2'),
-        mockDb.get<Report>('investor_platform_reports_v2'),
-        mockDb.get('investor_platform_audits_v2') as any // Cast for now
+        mockDb.getBusinesses(),
+        mockDb.getInvestors(),
+        mockDb.getReports(),
+        mockDb.getAudits()
       ]);
 
       setStats({

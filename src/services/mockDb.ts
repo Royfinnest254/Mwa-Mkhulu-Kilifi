@@ -209,6 +209,11 @@ class MockDbService {
     }
 
     // --- REPORTS ---
+    async getReports(): Promise<Report[]> {
+        await delay(300);
+        return this.get<Report>(STORAGE_KEYS.REPORTS);
+    }
+
     async getReportsByBusinessId(businessId: string): Promise<Report[]> {
         await delay(300);
         const reports = this.get<Report>(STORAGE_KEYS.REPORTS);
@@ -253,6 +258,11 @@ class MockDbService {
     }
 
     // --- AUDITS (Phase 7) ---
+    async getAudits(): Promise<AuditRecord[]> {
+        await delay(300);
+        return this.get<AuditRecord>(STORAGE_KEYS.AUDITS);
+    }
+
     async getAuditsByBusinessId(businessId: string): Promise<AuditRecord[]> {
         await delay(300);
         const audits = this.get<AuditRecord>(STORAGE_KEYS.AUDITS);
