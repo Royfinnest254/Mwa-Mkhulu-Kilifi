@@ -1,0 +1,28 @@
+# Task List
+
+- [x] Phase 0: Product Definition & System Design
+    - [x] Define User Roles
+    - [x] Define Data Permissions (Allowed/Forbidden)
+    - [x] Define Trust Boundaries
+    - [x] Define MVP Scope
+    - [x] Create Feature List
+    - [x] Create User Flow Diagrams
+- [-] Phase 1: Core Infrastructure Setup (Merged into Phase 3)
+- [-] Phase 2: Authentication & Role System (Skipped for No-Auth MVP)
+- [/] Phase 3: User Profiles & Business Registration (No Auth MVP)
+    - [x] Project Scaffold (Next.js + Tailwind)
+    - [x] Implementation Plan (No Auth)
+    - [x] Database Schema (Businesses, Investors, Links)
+    - [x] Backend APIs (CRUD - No Auth)
+    - [x] Frontend: Dashboard Shell
+    - [x] Frontend: Business Registration
+    - [x] Frontend: Investor Registration
+    - [x] Frontend: Entity Linking
+- [ ] Phase 4: Dashboards
+- [ ] Phase 5: Reporting System
+- [ ] Phase 6: Evidence Upload & Verification
+- [ ] Phase 7: Audit & Assurance System
+- [ ] Phase 8: Messaging & Controlled Communication
+- [ ] Phase 9: Security Hardening & Compliance
+- [ ] Phase 10: MVP Launch
+- [ ] Phase 11: Post-MVP Expansion
