@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowRight, MapPin, Briefcase } from 'lucide-react';
 
 const PostJob = () => {

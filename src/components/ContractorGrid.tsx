@@ -1,4 +1,3 @@
-import React from 'react';
 import { Star, Shield, MapPin, Briefcase } from 'lucide-react';
 
 const agents = [

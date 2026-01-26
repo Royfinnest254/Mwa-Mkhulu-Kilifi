@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
 import { Calendar, Wallet, CheckCircle, Camera, Clock, AlertCircle, FileText, ChevronRight, Download } from 'lucide-react';
 
 const Dashboard = () => {
-    const [activeTab, setActiveTab] = useState('overview');
 
     const milestones = [
         { title: "Foundation", status: "completed", date: "Oct 12, 2025" },
@@ -59,8 +57,8 @@ const Dashboard = () => {
                                         <div key={i} className="flex gap-6 items-start group">
                                             {/* Icon */}
                                             <div className={`relative z-10 w-10 h-10 rounded-full flex items-center justify-center border-4 border-white shadow-sm transition-colors ${m.status === 'completed' ? 'bg-brand-blue text-white' :
-                                                    m.status === 'in-progress' ? 'bg-brand-orange text-white' :
-                                                        'bg-gray-100 text-gray-400'
+                                                m.status === 'in-progress' ? 'bg-brand-orange text-white' :
+                                                    'bg-gray-100 text-gray-400'
                                                 }`}>
                                                 {m.status === 'completed' && <CheckCircle size={18} />}
                                                 {m.status === 'in-progress' && <Clock size={18} className="animate-spin-slow" />}

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Menu, X, Globe, User } from 'lucide-react';
+import { useState } from 'react';
+import { Menu, X, Globe } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 

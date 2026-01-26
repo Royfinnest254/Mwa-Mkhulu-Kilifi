@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Star, Shield, MapPin, Briefcase, Search, Filter } from 'lucide-react';
 
 const agents = [
@@ -98,8 +98,8 @@ const Marketplace = () => {
                             key={cat}
                             onClick={() => setFilter(cat)}
                             className={`px-6 py-2 rounded-full font-medium transition-all whitespace-nowrap ${filter === cat
-                                    ? 'bg-brand-blue text-white shadow-lg shadow-brand-blue/25'
-                                    : 'bg-white text-gray-600 hover:bg-gray-50 border border-gray-200'
+                                ? 'bg-brand-blue text-white shadow-lg shadow-brand-blue/25'
+                                : 'bg-white text-gray-600 hover:bg-gray-50 border border-gray-200'
                                 }`}
                         >
                             {cat}

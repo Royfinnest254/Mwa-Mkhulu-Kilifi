@@ -1,5 +1,3 @@
-import React from 'react';
-import { motion } from 'framer-motion';
 import { Calendar, Wallet, CheckCircle, Camera, Clock, AlertCircle } from 'lucide-react';
 
 const ProjectDashboard = () => {
@@ -39,8 +37,8 @@ const ProjectDashboard = () => {
                                     {milestones.map((m, i) => (
                                         <div key={i} className="flex flex-col items-center text-center">
                                             <div className={`w-8 h-8 rounded-full flex items-center justify-center border-2 mb-2 bg-white transition-colors ${m.status === 'completed' ? 'border-brand-blue text-brand-blue' :
-                                                    m.status === 'in-progress' ? 'border-brand-orange text-brand-orange animate-pulse' :
-                                                        'border-gray-200 text-gray-300'
+                                                m.status === 'in-progress' ? 'border-brand-orange text-brand-orange animate-pulse' :
+                                                    'border-gray-200 text-gray-300'
                                                 }`}>
                                                 {m.status === 'completed' && <CheckCircle size={14} />}
                                                 {m.status === 'in-progress' && <Clock size={14} />}
